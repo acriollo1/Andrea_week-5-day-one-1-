@@ -43,25 +43,33 @@ my_tuple = (1, 2, 3, 4)
 a, b, c, d = my_tuple
 print(a, b, c, d)
 #################################################sets######################################################
-
-
+#sets are simmilar to tuples. th eonly difference is that they will not contain or print out any repeated elements.
+my_firstSet = set((1,2,2,2,2,3,4,5))
+print(my_firstSet)
+print(2 in my_firstSet)#true
+print(6 in my_firstSet)#false
 # Join the following sets into one, called my_set_3:
 
-{1, 2, "three", "four"}
+set1 = {1, 2, "three", "four"}
 
-{"three", 4, 5}
-
-
+set2 = {"three", 4, 5}
+s3 = set1.union(set2)
+print(s3)
+s3.add(8)
+print(s3)
 # Remove a random item from the following set, using set methods.
 
 raffle = {"Rachel", "Monica", "Phoebe", "Joey", "Chandler", "Ross"}
-
-
+raffle.remove("Rachel")
+print(raffle)
+raffle.remove("Phoebe")
+print(raffle)
 
 # Add the name Gunther to the following set, using set methods:
 
 raffle = {"Rachel", "Monica", "Phoebe", "Joey", "Chandler", "Ross"}
-
+raffle.add("Tom")
+print(raffle)
 #################################################booleans######################################################
 # booleans
 # a boolean can only have 2 values -- true or False
